@@ -17,9 +17,9 @@ An end-to-end, highly scalable data engineering and analytics platform built on 
 
 | Dashboard Overview | AI Business Insights |
 | :---: | :---: |
-| ![Overview](docs/images/overview_placeholder.png) | ![Insights](docs/images/ai_insights_placeholder.png) |
+| ![Overview](docs/images/overview.png) | ![Insights](docs/images/ai_insights.png) |
 | **Sales Analytics** | **Customer Analytics** |
-| ![Sales](docs/images/sales_placeholder.png) | ![Customer](docs/images/customer_placeholder.png) |
+| ![Sales](docs/images/sales.png) | ![Customer](docs/images/customer.png) |
 
 ---
 
