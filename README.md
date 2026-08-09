@@ -9,7 +9,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/priyanshuu00/AI-Powered-Customer-Sales-Analytics-Platform)
 
 ## Short Description
-An end-to-end, highly scalable data engineering and analytics platform built on the Olist E-Commerce dataset. It ingests transactional data, models it via a 3NF MySQL Data Warehouse, distributes heavy workloads using Apache Spark, and automates executive insights via a Gemini AI-powered Streamlit Dashboard.
+An end-to-end, highly scalable data engineering and analytics platform built on the E-Commerce dataset. It ingests transactional data, models it via a 3NF MySQL Data Warehouse, distributes heavy workloads using Apache Spark, and automates executive insights via a Gemini AI-powered Streamlit Dashboard.
 
 ---
 
