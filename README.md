@@ -245,21 +245,6 @@ pip install -r requirements.txt
 
 ---
 
-## Configuration
-
-Create a `.env` file in the root directory to store your sensitive database credentials and API keys securely:
-
-```env
-DB_USER=root
-DB_PASSWORD=your_secure_password
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=olist_analytics
-GEMINI_API_KEY=your_google_gemini_key_here
-```
-
----
-
 ## Running the Project
 
 ```bash
@@ -286,32 +271,6 @@ streamlit run dashboard/app.py
 | Database ERD | Spark Execution |
 | :---: | :---: |
 | ![ERD](docs/images/erd_placeholder.png) | ![Spark](docs/images/spark_placeholder.png) |
-
-*(Note: Replace placeholders in `/docs/images/` with actual captures before deployment).*
-
----
-
-## Resume Description
-**AI-Powered Customer Intelligence & Sales Analytics Platform**
-- Architected an end-to-end data pipeline processing 100,000+ e-commerce transactions, utilizing Python/Pandas for ETL and enforcing 3NF integrity in MySQL.
-- Engineered a dual-engine analytics backend, implementing advanced SQL (CTEs, Window Functions) for exact aggregations and Apache PySpark for distributed, scalable processing.
-- Developed an interactive Business Intelligence dashboard using Streamlit, heavily leveraging caching to reduce database load.
-- Integrated Google Gemini LLM to automate Executive Summaries and Root Cause Analysis, reducing manual reporting time from hours to seconds.
-
----
-
-## LinkedIn Description
-🚀 Just deployed my AI-Powered Customer Intelligence Platform! 
-I built an end-to-end data engineering pipeline that ingests raw e-commerce data and transforms it into actionable business intelligence. 
-🔹 **Storage**: 3NF MySQL Data Warehouse
-🔹 **Processing**: Apache Spark & Pandas for scalable aggregations
-🔹 **Visualization**: Real-time Streamlit BI Dashboard
-🔹 **Intelligence**: Google Gemini LLM integrated to auto-generate Root Cause Analysis and Strategic Recommendations.
-
----
-
-## GitHub Repository Description
-An end-to-end, highly scalable data engineering and analytics pipeline featuring a Python ETL, MySQL Data Warehouse, Apache Spark analytics, Streamlit BI Dashboard, and Google Gemini AI insights.
 
 ---
 
