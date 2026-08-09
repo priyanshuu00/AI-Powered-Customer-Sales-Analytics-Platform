@@ -27,9 +27,9 @@ An end-to-end, highly scalable data engineering and analytics platform built on 
 
 | Metric | Value | Metric | Value |
 | :--- | :--- | :--- | :--- |
-| **Orders Processed** | 100K+ | **Interactive Charts** | 30+ |
-| **Customers** | 96K+ | **SQL Queries** | 40+ |
-| **Products** | 32K+ | **Data Quality Score** | 98% |
+| **Orders Processed** | 10K+ | **Interactive Charts** | 30+ |
+| **Customers** | 9K+ | **SQL Queries** | 40+ |
+| **Products** | 3K+ | **Data Quality Score** | 98% |
 | **Normalized Tables** | 8 | **AI Reports** | 5+ |
 
 ---
