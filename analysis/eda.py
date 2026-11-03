@@ -1,22 +1,24 @@
-import pandas as pd
-from sqlalchemy import create_engine
-import os
-from dotenv import load_dotenv
+"""Exploratory data profiling against the MySQL warehouse.
+
+The engine comes from :func:`database.db_connection.get_db_engine`, which builds
+the DSN through ``sqlalchemy.engine.URL.create``. Credentials are therefore
+percent-encoded, so a password containing ``@`` or ``:`` no longer breaks the
+connection string.
+"""
+
 import logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+import pandas as pd
+
+from database.db_connection import get_db_engine
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
+
 
 class DataProfiler:
     def __init__(self):
-        load_dotenv()
-        DB_USER = os.getenv("DB_USER", "root")
-        DB_PASSWORD = os.getenv("DB_PASSWORD", "root")
-        DB_HOST = os.getenv("DB_HOST", "localhost")
-        DB_PORT = os.getenv("DB_PORT", "3306")
-        DB_NAME = os.getenv("DB_NAME", "olist_analytics")
-        self.db_uri = f"mysql+mysqlconnector://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-        self.engine = create_engine(self.db_uri)
+        self.engine = get_db_engine()
 
     def load_table(self, table_name: str) -> pd.DataFrame:
         query = f"SELECT * FROM {table_name}"
@@ -36,6 +38,6 @@ class DataProfiler:
             "missing_values": df.isnull().sum().to_dict(),
             "duplicate_count": int(df.duplicated().sum()),
             "memory_usage_mb": round(df.memory_usage(deep=True).sum() / (1024 * 1024), 2),
-            "data_types": df.dtypes.astype(str).to_dict()
+            "data_types": df.dtypes.astype(str).to_dict(),
         }
         return profile

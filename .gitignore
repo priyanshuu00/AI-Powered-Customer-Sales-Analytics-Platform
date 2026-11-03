@@ -51,8 +51,11 @@ cover/
 
 # Data & Database files
 data/raw/*.csv
+!data/raw/.gitkeep
 data/processed/*.csv
 data/processed/*.parquet
+data/processed/*.db
+data/processed/*.sqlite
 database/*.db
 database/*.sqlite
 
@@ -67,9 +70,14 @@ ENV/
 env.bak/
 venv.bak/
 
-# Reports output
+# Reports output (generated artifacts, not source)
 reports/*.pdf
 reports/*.html
+reports/*.log
+reports/*.txt
+reports/*.md
+reports/charts/
+!reports/.gitkeep
 
 # IDEs & Editors
 .vscode/

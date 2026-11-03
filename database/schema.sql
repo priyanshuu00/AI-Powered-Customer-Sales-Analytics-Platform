@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS olist_analytics;
-USE olist_analytics;
+CREATE DATABASE IF NOT EXISTS sales_analytics_db;
+USE sales_analytics_db;
 
 -- Drop tables if they exist to allow clean runs
 DROP TABLE IF EXISTS order_items;

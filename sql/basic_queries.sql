@@ -1,5 +1,5 @@
 -- basic_queries.sql
-USE olist_analytics;
+USE sales_analytics_db;
 
 -- ==========================================
 -- Part 1: KPI Queries

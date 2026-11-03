@@ -1,25 +1,21 @@
+"""AI-Powered Customer Sales Analytics Platform.
+
+Root Streamlit entry point. Delegates to the dashboard package so that
+``streamlit run app.py`` launches the full application.
 """
-AI-Powered Customer Sales Analytics Platform
-Main Streamlit Web Application Entry Point
-"""
 
-import streamlit as st
+from __future__ import annotations
 
-def main() -> None:
-    """Initialize and run the Streamlit application layout."""
-    st.set_page_config(
-        page_title="AI-Powered Customer Sales Analytics Platform",
-        page_icon="📊",
-        layout="wide",
-        initial_sidebar_state="expanded"
-    )
+import sys
+from pathlib import Path
 
-    st.title("📊 AI-Powered Customer Sales Analytics Platform")
-    st.markdown(
-        "Welcome to the **AI-Powered Customer Sales Analytics Platform**. "
-        "Navigate through the sidebar to explore Sales Trends, Customer RFM Segmentation, "
-        "PySpark Big Data Analytics, and AI Executive Insights."
-    )
+PROJECT_ROOT = Path(__file__).resolve().parent
+_entry = str(PROJECT_ROOT)
+if _entry in sys.path:
+    sys.path.remove(_entry)
+sys.path.insert(0, _entry)
+
+from dashboard.app import main  # noqa: E402
 
 if __name__ == "__main__":
     main()

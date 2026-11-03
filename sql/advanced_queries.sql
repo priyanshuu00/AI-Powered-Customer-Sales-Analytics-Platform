@@ -1,5 +1,5 @@
 -- advanced_queries.sql
-USE olist_analytics;
+USE sales_analytics_db;
 
 -- ==========================================
 -- Part 2: Customer Analytics (Advanced)

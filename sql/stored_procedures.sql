@@ -1,5 +1,5 @@
 -- stored_procedures.sql
-USE olist_analytics;
+USE sales_analytics_db;
 
 -- Drop procedures if they exist to avoid conflicts on re-runs
 DROP PROCEDURE IF EXISTS GetCustomerOrderHistory;

@@ -101,3 +101,13 @@ def transform_data(dfs: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
     
     logger.info("Transformation Completed")
     return dfs
+
+
+class Transform:
+    """Backward-compatible facade used by legacy imports and tests."""
+
+    def clean_data(self, dfs: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
+        return transform_data(dfs)
+
+    def transform(self, dfs: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
+        return transform_data(dfs)

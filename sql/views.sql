@@ -1,5 +1,6 @@
 -- views.sql
-USE olist_analytics;
+-- Keep this aligned with DB_NAME in .env (default: sales_analytics_db).
+USE sales_analytics_db;
 
 -- Part 7: Business Views
 

@@ -1,7 +1,7 @@
 -- Phase 2 Database Queries Placeholder
 -- These queries are intended for data exploration and future analytics.
 
-USE olist_analytics;
+USE sales_analytics_db;
 
 -- 1. Sales Performance (Revenue by Month)
 -- Useful for identifying seasonal trends in sales.

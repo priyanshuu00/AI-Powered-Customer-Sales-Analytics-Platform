@@ -1,5 +1,5 @@
 -- indexes.sql
-USE olist_analytics;
+USE sales_analytics_db;
 
 -- Part 9: Query Optimization
 
